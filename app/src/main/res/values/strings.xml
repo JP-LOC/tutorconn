@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tutorconn</string>
+    <string-array name="levels">
+        <item>ALL</item>
+        <item>Primary-Grades 1 and 2</item>
+        <item>Primary-Grades 3 to 5</item>
+        <item>Primary-Grades 6 and 7</item>
+        <item>ZJC</item>
+        <item>O LEVEL</item>
+        <item>A LEVEL</item>
+    </string-array>
+</resources>

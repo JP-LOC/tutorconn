@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1sp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewl"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="2sp"
+                android:background="@color/cardview_light_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3"
+                tools:listitem="@layout/list_item" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:cardCornerRadius="8sp"
+                app:cardElevation="4sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RadioGroup
+                            android:id="@+id/rg_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/harare"
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="HARARE" />
+
+                            <RadioButton
+                                android:id="@+id/bulawayo"
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="BULAWAYO" />
+
+                            <RadioButton
+                                android:id="@+id/gweru"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="GWERU" />
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:id="@+id/rg_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/chinhoyi"
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="CHINHOYI" />
+
+                            <RadioButton
+                                android:id="@+id/mutare"
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="MUTARE" />
+
+                            <RadioButton
+                                android:id="@+id/masvingo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MASVINGO" />
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:id="@+id/rg_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/chegutu"
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="CHEGUTU" />
+
+                            <RadioButton
+                                android:id="@+id/kwekwe"
+                                android:layout_width="120sp"
+                                android:layout_height="wrap_content"
+                                android:text="KWEKWE" />
+
+                            <RadioButton
+                                android:id="@+id/hwange"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="HWANGE" />
+                        </RadioGroup>
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60sp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5sp"
+        android:background="@color/cardview_light_background"
+        app:elevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/toolbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_light_background"
+            android:gravity="bottom">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:visibility="gone"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="46sp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="2sp"
+                android:layout_marginTop="1sp"
+                android:layout_marginBottom="5sp"
+                app:cardCornerRadius="10sp"
+                app:cardElevation="6sp">
+
+                <ImageView
+                    android:id="@+id/menu_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36sp"
+
+
+                    android:layout_gravity="center"
+                    android:padding="5sp"
+                    android:tint="@color/colorPrimary"
+                    app:srcCompat="@drawable/ic_round_notes" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/title_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="title"
+                android:textSize="0sp" />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

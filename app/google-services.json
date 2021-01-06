@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "539397241392",
+    "firebase_url": "https://tutorscape-a1e67.firebaseio.com",
+    "project_id": "tutorscape-a1e67",
+    "storage_bucket": "tutorscape-a1e67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539397241392:android:90c0296e8af71798884bf5",
+        "android_client_info": {
+          "package_name": "com.example.tutorscape"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539397241392-k52ba6134cu6ejmqis2thalddm8eq99b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tutorscape",
+            "certificate_hash": "ebe8d1628923144d54ff9b0cf0b8a46cfa0f0a5e"
+          }
+        },
+        {
+          "client_id": "539397241392-0tr0vnhgcknig3d4d1lmjn8h7rtfag6h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPN_5qGWP7ZgnDpXE0dm1L_-HRTPGTojM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539397241392-0tr0vnhgcknig3d4d1lmjn8h7rtfag6h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

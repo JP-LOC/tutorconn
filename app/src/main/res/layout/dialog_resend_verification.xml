@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36sp"
+        android:layout_marginTop="32sp"
+        android:layout_marginRight="36sp"
+        android:layout_marginBottom="90dp"
+        app:cardCornerRadius="12sp"
+        app:cardElevation="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:layout_constraintVertical_bias="0.31">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgmine">
+
+            <TextView
+                android:id="@+id/dialogConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/login_button_bk"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="CONFIRM"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/dialogCancel"
+                app:layout_constraintTop_toTopOf="@+id/dialogCancel" />
+
+            <EditText
+                android:id="@+id/confirm_email"
+                android:layout_width="230sp"
+                android:layout_height="45sp"
+                android:layout_marginBottom="24dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:gravity="center_vertical"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10sp"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/confirm_password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dialogTitle" />
+
+            <TextView
+                android:id="@+id/dialogCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/login_button_bk"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="CANCEL"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/dialogConfirm"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
+
+            <TextView
+                android:id="@+id/dialogTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="42dp"
+                android:text="RESEND EMAIL VERIFICATION"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toTopOf="@+id/confirm_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <EditText
+                android:id="@+id/confirm_password"
+                android:layout_width="230sp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="42dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:gravity="center_vertical"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:paddingLeft="10sp"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/dialogCancel"
+                app:layout_constraintStart_toStartOf="@+id/confirm_email"
+                app:layout_constraintTop_toBottomOf="@+id/confirm_email" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:tint="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/confirm_email"
+                app:layout_constraintEnd_toStartOf="@+id/confirm_email"
+                app:layout_constraintTop_toTopOf="@+id/confirm_email"
+                app:srcCompat="@drawable/mail" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:tint="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/confirm_password"
+                app:layout_constraintEnd_toStartOf="@+id/confirm_password"
+                app:layout_constraintTop_toTopOf="@+id/confirm_password"
+                app:srcCompat="@drawable/ic_outline_lock_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconnn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
